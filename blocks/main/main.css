@@ -1,0 +1,7 @@
+.main {
+  max-width: 1760px;
+  margin: 150px auto auto;
+  display: grid;
+  grid-template-columns: 430px 650px 1fr;
+  gap: 20px;
+}

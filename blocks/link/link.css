@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+
+  color:rgba(0, 0, 0, 1);
+  font-weight: 600;
+  font-style: normal;
+  font-family: Inter;
+  font-variation-settings: 'wght' 422;
+  letter-spacing: -0.2px;
+  font-size: 18px;
+}
+
+.link:hover {
+  color: #727272;
+}

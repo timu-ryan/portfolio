@@ -1,0 +1,7 @@
+.about-me__list-item {
+  
+}
+
+.about-me__list-item::before {
+  content: "— ";
+} 

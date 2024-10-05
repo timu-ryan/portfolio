@@ -10,6 +10,7 @@
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__image/main__image.css);
 @import url(../blocks/main/__image-section/main__image-section.css);
+@import url(../blocks/main/_projects/main_projects.css);
 
 @import url(../blocks/nav/nav.css);
 @import url(../blocks/nav/__link/nav__link.css);

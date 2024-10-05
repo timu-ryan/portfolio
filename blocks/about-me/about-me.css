@@ -1,12 +1,12 @@
 .about-me {
-  padding: 32px 230px 0 0;
+  padding: 70px 120px 0 0;
 
   color: rgba(0, 0, 0, 1);
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-family: Inter;
   font-variation-settings: 'wght' 422;
   letter-spacing: -0.2px;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 12px;
+  line-height: 16px;
 }

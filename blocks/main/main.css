@@ -1,7 +1,14 @@
 .main {
   max-width: 1760px;
-  margin: 150px auto auto;
+  margin: 10px auto auto 24px;
   display: grid;
-  grid-template-columns: 430px 650px 1fr;
+  grid-template-columns: 292px 444px 1fr;
+  justify-content: center;
   gap: 20px;
+}
+
+@media screen and (width >= 1400px) {
+  .main {  
+    grid-template-columns: 292px 444px 200px;
+  }
 }

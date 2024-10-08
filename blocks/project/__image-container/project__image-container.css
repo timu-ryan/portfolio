@@ -1,0 +1,5 @@
+.project__image-container {
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+}

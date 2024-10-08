@@ -1,45 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body class="page">
-  <main class="main main_projects">
-  <div>
-    <h1 class="heading">
-      <a href="../index.html" class="link">Гафаров Тимур</a>
-    </h1>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="./layouts.html" class="link link_active">Верстка</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./responsible.html" class="link">Адаптивная верстка</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./animation.html" class="link">Анимация</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./typescript.html" class="link">TypeScript</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./react.html" class="link">React</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./other-skills.html" class="link">Другие навыки</a>
-        </li>
-        <li class="nav__list-item">
-          <button class="add-btn">draw</button>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <section class="project-info">
-    <!-- <article class="project">
+const container = document.querySelector('.about-me');
+const layoutButton = document.querySelector('.layout-btn');
+const mainElement = document.querySelector('.main');
+const imageSectionElement = document.querySelector('.main__image-section');
+
+/* 
+
+попользоваться тегом <template>
+add links to the projects
+
+*/
+
+layoutButton.addEventListener('click', () => {
+  mainElement.classList.add('main_projects');
+  imageSectionElement.innerHTML = ``;
+  container.innerHTML = `
+    <article class="project">
       <div class="project__text">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
@@ -54,9 +29,11 @@
       <div class="project__image-container">
         <img alt="проект" src="../images/from-stratch.png" class="project__image"/>
       </div>
-    </article> -->
-  </section>
-</main>
-<script src="../scripts/script.js"></script>
-</body>
-</html>
+    </article>
+  `;
+
+
+  // container.appendChild(element);
+    
+  
+})

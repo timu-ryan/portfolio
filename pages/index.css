@@ -27,3 +27,10 @@
 @import url(../blocks/about-me/__list-item/about-me__list-item.css);
 
 @import url(../blocks/address/address.css);
+
+@import url(../blocks/project-info/project-info.css);
+
+@import url(../blocks/project/project.css);
+@import url(../blocks/project/__image-container/project__image-container.css);
+@import url(../blocks/project/__image/project__image.css);
+@import url(../blocks/project/__text/project__text.css);

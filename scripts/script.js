@@ -2,7 +2,7 @@ import {
   mainPageAboutMeLayout,
   mainPageImageLayout,
   layoutProjects,
-} from '../utils/constants'
+} from '../utils/constants.js'
 
 const container = document.querySelector('.about-me');
 const layoutButton = document.querySelector('.layout-btn');

@@ -20,6 +20,7 @@
 @import url(../blocks/link/_active/link_active.css);
 
 @import url(../blocks/about-me/about-me.css);
+@import url(../blocks/about-me/_projects/about-me_projects.css);
 @import url(../blocks/about-me/__greeting/about-me__greeting.css);
 @import url(../blocks/about-me/__heading/about-me__heading.css);
 @import url(../blocks/about-me/__skills/about-me__skills.css);
@@ -31,6 +32,8 @@
 @import url(../blocks/project-info/project-info.css);
 
 @import url(../blocks/project/project.css);
+@import url(../blocks/project/_image-size_medium/project_image-size_medium.css);
+@import url(../blocks/project/_image-size_large/project_image-size_large.css);
 @import url(../blocks/project/__image-container/project__image-container.css);
 @import url(../blocks/project/__image/project__image.css);
 @import url(../blocks/project/__text/project__text.css);

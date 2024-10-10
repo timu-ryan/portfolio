@@ -1,68 +1,14 @@
+import { 
+  mainPageAboutMeLayout,
+  mainPageImageLayout,
+  layoutProjects,
+} from '../utils/constants'
+
 const container = document.querySelector('.about-me');
 const layoutButton = document.querySelector('.layout-btn');
+const mainPageButton = document.querySelector('.main-page-btn');
 const mainElement = document.querySelector('.main');
 const imageSectionElement = document.querySelector('.main__image-section');
-
-/* 
-
-попользоваться тегом <template>
-add links to the projects
-
-*/
-
-const layoutProjects = [
-  {
-    name: "С чистого листа",
-    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
-    projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "../images/from-stratch.png",
-    imageAlt: "изображение сайта \"с чистого листа\"",
-    imageSize: "small",
-  },
-  {
-    name: "С чистого листа",
-    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
-    projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "../images/from-stratch.png",
-    imageAlt: "изображение сайта \"с чистого листа\"",
-    imageSize: "small",
-  },
-  {
-    name: "С чистого листа",
-    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
-    projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "../images/from-stratch.png",
-    imageAlt: "изображение сайта \"с чистого листа\"",
-    imageSize: "small",
-  },
-]
-
-
-// class Project {
-//   constructor(projectName, cardDescription, githubPageLink, projectLink, imagePath, imageAlt, imageSize) {
-//     this.name = projectName;
-//     this.description = cardDescription;
-//     this.githubPageLink = githubPageLink;
-//     this.projectLink = projectLink;
-//     this.imagePath = imagePath;
-//     this.imageAlt = imageAlt;
-//     this.imageSize = imageSize;
-//   }
-// };
-
-// const fromStrathProject = new Project(
-//   "С чистого листа",
-//   "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-//   "https://timu-ryan.github.io/from-scratch/",
-//   "https://github.com/timu-ryan/from-scratch",
-//   "../images/from-stratch.png",
-//   "изображение сайта \"с чистого листа\"",
-//   "small",
-// )
-
 
 function generateCardLayout(project) {
   // const { name, description, githubPageLink, projectLink, imagePath, imageAlt, imageSize } = project;
@@ -82,21 +28,28 @@ function generateCardLayout(project) {
   `
 }
 
-
-function generateProjectsPage() {
+// TODO: add link_active class
+function generateProjectsPage(projectsList) {
   mainElement.classList.add('main_projects');
   imageSectionElement.innerHTML = ``; // очистка главной страницы
+  imageSectionElement.setAttribute("hidden", true);
   container.innerHTML = '' // очистка страницы
-  layoutProjects.forEach(project => {
+  container.classList.add("about-me_projects")
+  projectsList.forEach(project => {
     container.innerHTML += generateCardLayout(project)
   })
   // container.innerHTML = generateCardLayout(fromStrathProject)
 }
 
 function generateMainPage() {
-
+  mainElement.classList.remove('main_projects');
+  imageSectionElement.removeAttribute("hidden");
+  imageSectionElement.innerHTML = mainPageImageLayout;
+  container.innerHTML = mainPageAboutMeLayout;
 }
 
+mainPageButton.addEventListener('click', generateMainPage)
+
 layoutButton.addEventListener('click', () => {
-  generateProjectsPage();
+  generateProjectsPage(layoutProjects);
 })

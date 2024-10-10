@@ -10,30 +10,93 @@ add links to the projects
 
 */
 
-layoutButton.addEventListener('click', () => {
+const layoutProjects = [
+  {
+    name: "С чистого листа",
+    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
+    projectLink: "https://github.com/timu-ryan/from-scratch",
+    imagePath: "../images/from-stratch.png",
+    imageAlt: "изображение сайта \"с чистого листа\"",
+    imageSize: "small",
+  },
+  {
+    name: "С чистого листа",
+    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
+    projectLink: "https://github.com/timu-ryan/from-scratch",
+    imagePath: "../images/from-stratch.png",
+    imageAlt: "изображение сайта \"с чистого листа\"",
+    imageSize: "small",
+  },
+  {
+    name: "С чистого листа",
+    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
+    projectLink: "https://github.com/timu-ryan/from-scratch",
+    imagePath: "../images/from-stratch.png",
+    imageAlt: "изображение сайта \"с чистого листа\"",
+    imageSize: "small",
+  },
+]
+
+
+// class Project {
+//   constructor(projectName, cardDescription, githubPageLink, projectLink, imagePath, imageAlt, imageSize) {
+//     this.name = projectName;
+//     this.description = cardDescription;
+//     this.githubPageLink = githubPageLink;
+//     this.projectLink = projectLink;
+//     this.imagePath = imagePath;
+//     this.imageAlt = imageAlt;
+//     this.imageSize = imageSize;
+//   }
+// };
+
+// const fromStrathProject = new Project(
+//   "С чистого листа",
+//   "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+//   "https://timu-ryan.github.io/from-scratch/",
+//   "https://github.com/timu-ryan/from-scratch",
+//   "../images/from-stratch.png",
+//   "изображение сайта \"с чистого листа\"",
+//   "small",
+// )
+
+
+function generateCardLayout(project) {
+  // const { name, description, githubPageLink, projectLink, imagePath, imageAlt, imageSize } = project;
+  const { name, cardDescription, githubPageLink, projectLink, imagePath, imageAlt, imageSize } = project;
+  return `
+    <article class="project">
+      <div class="project__text">
+        <h3>${name}</h3>
+        <p>${cardDescription}</p>
+        <a href="${githubPageLink}">github pages</a>
+        <a href="${projectLink}">project</a>
+      </div>
+      <div class="project__image-container">
+        <img alt="${imageAlt}" src="${imagePath}" class="project__image project__image_${imageSize}"/>
+      </div>
+    </article>
+  `
+}
+
+
+function generateProjectsPage() {
   mainElement.classList.add('main_projects');
-  imageSectionElement.innerHTML = ``;
-  container.innerHTML = `
-    <article class="project">
-      <div class="project__text">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="project__image-container">
-        <img alt="проект" src="../images/from-stratch.png" class="project__image"/>
-      </div>
-    </article>
-    <article class="project">
-      <div class="project__text">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="project__image-container">
-        <img alt="проект" src="../images/from-stratch.png" class="project__image"/>
-      </div>
-    </article>
-  `;
+  imageSectionElement.innerHTML = ``; // очистка главной страницы
+  container.innerHTML = '' // очистка страницы
+  layoutProjects.forEach(project => {
+    container.innerHTML += generateCardLayout(project)
+  })
+  // container.innerHTML = generateCardLayout(fromStrathProject)
+}
 
+function generateMainPage() {
 
-  // container.appendChild(element);
-    
-  
+}
+
+layoutButton.addEventListener('click', () => {
+  generateProjectsPage();
 })

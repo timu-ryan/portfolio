@@ -43,6 +43,7 @@ function generateProjectsPage(projectsList) {
 
 function generateMainPage() {
   mainElement.classList.remove('main_projects');
+  container.classList.remove("about-me_projects")
   imageSectionElement.removeAttribute("hidden");
   imageSectionElement.innerHTML = mainPageImageLayout;
   container.innerHTML = mainPageAboutMeLayout;

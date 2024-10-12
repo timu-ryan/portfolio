@@ -10,7 +10,7 @@ export const layoutProjects = [
     cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     githubPageLink: "https://timu-ryan.github.io/from-scratch/",
     projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "./images/from-stratch.png",
+    imagePath: "./images/from-stratch-min.png",
     imageAlt: "изображение сайта \"с чистого листа\"",
     imageSize: "small",
   },
@@ -19,7 +19,7 @@ export const layoutProjects = [
     cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     githubPageLink: "https://timu-ryan.github.io/from-scratch/",
     projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "./images/from-stratch.png",
+    imagePath: "./images/from-stratch-min.png",
     imageAlt: "изображение сайта \"с чистого листа\"",
     imageSize: "small",
   },
@@ -28,7 +28,7 @@ export const layoutProjects = [
     cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     githubPageLink: "https://timu-ryan.github.io/from-scratch/",
     projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "./images/from-stratch.png",
+    imagePath: "./images/from-stratch-min.png",
     imageAlt: "изображение сайта \"с чистого листа\"",
     imageSize: "small",
   },
@@ -39,7 +39,7 @@ export const mainPageAboutMeLayout = `
     <h2 class="about-me__heading">Привет :)</h2>
     <p>Меня зовут Тимур, я frontend-разработчик, программист, спортсмен, любящий технологии и общение человек.</p>
     <p>Учусь на 4-м курсе МГТУ им. Н.Э. Баумана на кафедре "Компьютерные Системы Автоматизации". В 2023 году окончил курс "frontend-разработчик" от ЯндексПрактикума, в 2024 году прошел программу профессиональной переподготовки <span class="no-wrap">"web-разработчик"</span> при Цифровой Кафедре Бауманского университета.</p>
-    <p>Участвовал в научном проекте при кафедре "Умный поиск патентов". Проходил практику программистом в ПАО "Газпром автоматизация".</p>
+    <p>Участвовал в научном проекте при кафедре "Умный поиск патентов" с разработкой и интеграцией искусственного интеллекта. Проходил практику программистом в ПАО "Газпром автоматизация".</p>
   </section>
   <section class="about-me__skills">
     <h2 class="about-me__heading">Навыки:</h2>

@@ -1,3 +1,11 @@
 .project_image-size_large {
-  grid-template-columns: 1fr 550px;
+  /* grid-template-columns: 1fr 450px; */
+  grid-template-columns: 450px 1fr;
+  gap: 20px;
+  /* padding-right: 10px;
+  padding-left: 0; */
+}
+
+.project_image-size_large .project__image-container {
+  order: -1;
 }

@@ -1,7 +1,9 @@
 .project {
-  padding-right: 100px;
   display: grid;
-  grid-template-columns: 1fr 360px;
-  height: 400px;
+  grid-template-columns: 1fr 300px;
+  /* height: minmax(auto, 400px); */
+  /* grid-template-rows: minmax(200px, auto); */
+  max-height: 360px;
+  height: auto;
   gap: 50px;
 }

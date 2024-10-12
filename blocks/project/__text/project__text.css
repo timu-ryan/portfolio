@@ -1,3 +1,34 @@
 .project__text {
+  padding: 0 0 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-family: Inter;
+  font-variation-settings: 'wght' 422;
+  letter-spacing: -0.2px;
+  font-size: 12px;
+  line-height: 16px;
+}
 
+.project__text h3 {
+  /* margin: 0 0 10px; */
+  margin: 0 0 0px;
+
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.project__text div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project__text .link {
+  font-size: 12px;
 }

@@ -6,13 +6,13 @@ export const layoutProjects = [
       large
   */
   {
-    name: "С чистого листа",
+    name: "Оно тебе надо",
     cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     githubPageLink: "https://timu-ryan.github.io/from-scratch/",
     projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "./images/from-stratch-min.png",
+    imagePath: "./images/ono_tebe_nado-min.png",
     imageAlt: "изображение сайта \"с чистого листа\"",
-    imageSize: "small",
+    imageSize: "large",
   },
   {
     name: "С чистого листа",
@@ -24,13 +24,31 @@ export const layoutProjects = [
     imageSize: "small",
   },
   {
-    name: "С чистого листа",
+    name: "Научиться учиться",
     cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     githubPageLink: "https://timu-ryan.github.io/from-scratch/",
     projectLink: "https://github.com/timu-ryan/from-scratch",
-    imagePath: "./images/from-stratch-min.png",
+    imagePath: "./images/how_to_study_layout-min.png",
     imageAlt: "изображение сайта \"с чистого листа\"",
-    imageSize: "small",
+    imageSize: "large",
+  },
+  {
+    name: "Надо сделать идеально",
+    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
+    projectLink: "https://github.com/timu-ryan/from-scratch",
+    imagePath: "./images/it_must_be_done_perfectly-min.png",
+    imageAlt: "изображение сайта \"с чистого листа\"",
+    imageSize: "large",
+  },
+  {
+    name: "Посмотри в окно",
+    cardDescription: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    githubPageLink: "https://timu-ryan.github.io/from-scratch/",
+    projectLink: "https://github.com/timu-ryan/from-scratch",
+    imagePath: "./images/posmotri_v_okno-min.png",
+    imageAlt: "изображение сайта \"с чистого листа\"",
+    imageSize: "large",
   },
 ];
 

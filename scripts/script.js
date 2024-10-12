@@ -14,15 +14,19 @@ function generateCardLayout(project) {
   // const { name, description, githubPageLink, projectLink, imagePath, imageAlt, imageSize } = project;
   const { name, cardDescription, githubPageLink, projectLink, imagePath, imageAlt, imageSize } = project;
   return `
-    <article class="project">
+    <article class="project project_image-size_${imageSize}">
       <div class="project__text">
-        <h3>${name}</h3>
-        <p>${cardDescription}</p>
-        <a href="${githubPageLink}">github pages</a>
-        <a href="${projectLink}">project</a>
+        <div>
+          <h3>${name}</h3>
+          <p>${cardDescription}</p>
+        </div>
+        <div>
+          <a href="${githubPageLink}" target="_blank" class="link">github pages</a>
+          <a href="${projectLink}" target="_blank" class="link">project</a>
+        </div>
       </div>
       <div class="project__image-container">
-        <img alt="${imageAlt}" src="${imagePath}" class="project__image project__image_${imageSize}"/>
+        <img alt="${imageAlt}" src="${imagePath}" class="project__image"/>
       </div>
     </article>
   `

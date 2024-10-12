@@ -4,6 +4,7 @@
 
 @media screen and (width >= 1400px) {
   .main_projects { 
-    grid-template-columns: 292px calc(444px + 200px);
+    /* grid-template-columns: 292px calc(444px + 200px); */
+    grid-template-columns: 292px calc(644px + 200px);
   }
 }
